@@ -1,9 +1,9 @@
 #include <stdio.h>
-#define MAXSIZE 100
+#define MAXSIZE 99
 
 int list[MAXSIZE];
 
-void insertitem(int index, int value) {
+void replaceitem(int index, int value) {
     list[index] = value;
 }
 
@@ -21,7 +21,7 @@ int main() {
         removeitem(i);
     }
     int x = 67;
-    insertitem(0, x);
+    replaceitem(0, x);
     printf("%i\n", readitem(0)); // should return 67
     removeitem(0);
     printf("%i\n", readitem(0)); // should return 0
